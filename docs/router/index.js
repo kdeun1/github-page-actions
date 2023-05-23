@@ -34,15 +34,9 @@ import treeGridProps from 'docs/views/treeGrid/props';
 import paginationProps from 'docs/views/pagination/props';
 import heatMapProps from 'docs/views/heatMap/props';
 
-const repoName = process.env.NODE_ENV === 'production' ? '/github-page-actions' : '';
-
 const routes = [
   {
     path: '/',
-    redirect: { name: 'Intro' },
-  },
-  {
-    path: `${repoName}/`,
     name: 'Intro',
     component: Intro,
   },
@@ -342,7 +336,7 @@ const routes = [
 ];
 
 const router = createRouter({
-  history: createWebHistory(),
+  history: createWebHistory(process.env.BASE_URL),
   routes,
   scrollBehavior() {
     return {
