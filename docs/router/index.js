@@ -34,14 +34,20 @@ import treeGridProps from 'docs/views/treeGrid/props';
 import paginationProps from 'docs/views/pagination/props';
 import heatMapProps from 'docs/views/heatMap/props';
 
+const repoName = process.env.NODE_ENV === 'production' ? '/github-page-actions' : '';
+
 const routes = [
   {
     path: '/',
+    redirect: { name: 'Intro' },
+  },
+  {
+    path: `${repoName}/`,
     name: 'Intro',
     component: Intro,
   },
   {
-    path: '/tab',
+    path: `${repoName}/tab`,
     name: 'Tab',
     component: PageView,
     props: tabProps,
@@ -50,7 +56,7 @@ const routes = [
     },
   },
   {
-    path: '/window',
+    path: `${repoName}/window`,
     name: 'Window',
     component: PageView,
     props: windowProps,
@@ -59,7 +65,7 @@ const routes = [
     },
   },
   {
-    path: '/menu',
+    path: `${repoName}/menu`,
     name: 'Menu',
     component: PageView,
     props: menuProps,
@@ -68,7 +74,7 @@ const routes = [
     },
   },
   {
-    path: '/contextMenu',
+    path: `${repoName}/contextMenu`,
     name: 'ContextMenu',
     component: PageView,
     props: contextMenuProps,
@@ -77,7 +83,7 @@ const routes = [
     },
   },
   {
-    path: '/button',
+    path: `${repoName}/button`,
     name: 'Button',
     component: PageView,
     props: buttonProps,
@@ -86,7 +92,7 @@ const routes = [
     },
   },
   {
-    path: '/icon',
+    path: `${repoName}/icon`,
     name: 'Icon',
     component: PageView,
     props: iconProps,
@@ -95,7 +101,7 @@ const routes = [
     },
   },
   {
-    path: '/checkbox',
+    path: `${repoName}/checkbox`,
     name: 'Checkbox',
     component: PageView,
     props: checkboxProps,
@@ -104,7 +110,7 @@ const routes = [
     },
   },
   {
-    path: '/radio',
+    path: `${repoName}/radio`,
     name: 'Radio',
     component: PageView,
     props: radioProps,
@@ -113,7 +119,7 @@ const routes = [
     },
   },
   {
-    path: '/select',
+    path: `${repoName}/select`,
     name: 'Select',
     component: PageView,
     props: selectProps,
@@ -122,7 +128,7 @@ const routes = [
     },
   },
   {
-    path: '/toggle',
+    path: `${repoName}/toggle`,
     name: 'Toggle',
     component: PageView,
     props: toggleProps,
@@ -131,7 +137,7 @@ const routes = [
     },
   },
   {
-    path: '/textField',
+    path: `${repoName}/textField`,
     name: 'TextField',
     component: PageView,
     props: textFieldProps,
@@ -140,7 +146,7 @@ const routes = [
     },
   },
   {
-    path: '/inputNumber',
+    path: `${repoName}/inputNumber`,
     name: 'InputNumber',
     component: PageView,
     props: inputNumberProps,
@@ -149,7 +155,7 @@ const routes = [
     },
   },
   {
-    path: '/slider',
+    path: `${repoName}/slider`,
     name: 'Slider',
     component: PageView,
     props: sliderProps,
@@ -158,7 +164,7 @@ const routes = [
     },
   },
   {
-    path: '/calendar',
+    path: `${repoName}/calendar`,
     name: 'Calendar',
     component: PageView,
     props: calendarProps,
@@ -167,7 +173,7 @@ const routes = [
     },
   },
   {
-    path: '/datePicker',
+    path: `${repoName}/datePicker`,
     name: 'DatePicker',
     component: PageView,
     props: datePickerProps,
@@ -176,7 +182,7 @@ const routes = [
     },
   },
   {
-    path: '/scheduler',
+    path: `${repoName}/scheduler`,
     name: 'Scheduler',
     component: PageView,
     props: schedulerProps,
@@ -185,7 +191,7 @@ const routes = [
     },
   },
   {
-    path: '/timePicker',
+    path: `${repoName}/timePicker`,
     name: 'TimePicker',
     component: PageView,
     props: timePickerProps,
@@ -194,7 +200,7 @@ const routes = [
     },
   },
   {
-    path: '/pagination',
+    path: `${repoName}/pagination`,
     name: 'Pagination',
     component: PageView,
     props: paginationProps,
@@ -203,7 +209,7 @@ const routes = [
     },
   },
   {
-    path: '/grid',
+    path: `${repoName}/grid`,
     name: 'Grid',
     component: PageView,
     props: gridProps,
@@ -212,7 +218,7 @@ const routes = [
     },
   },
   {
-    path: '/tree',
+    path: `${repoName}/tree`,
     name: 'Tree',
     component: PageView,
     props: treeProps,
@@ -221,7 +227,7 @@ const routes = [
     },
   },
   {
-    path: '/treeGrid',
+    path: `${repoName}/treeGrid`,
     name: 'TreeGrid',
     component: PageView,
     props: treeGridProps,
@@ -230,7 +236,7 @@ const routes = [
     },
   },
   {
-    path: '/barChart',
+    path: `${repoName}/barChart`,
     name: 'BarChart',
     component: PageView,
     props: barChartProps,
@@ -239,7 +245,7 @@ const routes = [
     },
   },
   {
-    path: '/lineChart',
+    path: `${repoName}/lineChart`,
     name: 'LineChart',
     component: PageView,
     props: lineChartProps,
@@ -248,7 +254,7 @@ const routes = [
     },
   },
   {
-    path: '/scatterChart',
+    path: `${repoName}/scatterChart`,
     name: 'ScatterChart',
     component: PageView,
     props: scatterChartProps,
@@ -257,7 +263,7 @@ const routes = [
     },
   },
   {
-    path: '/pieChart',
+    path: `${repoName}/pieChart`,
     name: 'PieChart',
     component: PageView,
     props: pieChartProps,
@@ -266,7 +272,7 @@ const routes = [
     },
   },
   {
-    path: '/comboChart',
+    path: `${repoName}/comboChart`,
     name: 'ComboChart',
     component: PageView,
     props: comboChartProps,
@@ -275,7 +281,7 @@ const routes = [
     },
   },
   {
-    path: '/heatMap',
+    path: `${repoName}/heatMap`,
     name: 'HeatMap',
     component: PageView,
     props: heatMapProps,
@@ -284,7 +290,7 @@ const routes = [
     },
   },
   {
-    path: '/message',
+    path: `${repoName}/message`,
     name: 'Message',
     component: PageView,
     props: messageProps,
@@ -293,7 +299,7 @@ const routes = [
     },
   },
   {
-    path: '/messageBox',
+    path: `${repoName}/messageBox`,
     name: 'MessageBox',
     component: PageView,
     props: messageBoxProps,
@@ -302,7 +308,7 @@ const routes = [
     },
   },
   {
-    path: '/notification',
+    path: `${repoName}/notification`,
     name: 'Notification',
     component: PageView,
     props: notificationProps,
@@ -311,7 +317,7 @@ const routes = [
     },
   },
   {
-    path: '/loading',
+    path: `${repoName}/loading`,
     name: 'Loading',
     component: PageView,
     props: loadingProps,
@@ -320,7 +326,7 @@ const routes = [
     },
   },
   {
-    path: '/progress',
+    path: `${repoName}/progress`,
     name: 'Progress',
     component: PageView,
     props: progressProps,
