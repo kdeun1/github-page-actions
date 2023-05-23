@@ -47,7 +47,7 @@ const routes = [
     component: Intro,
   },
   {
-    path: `${repoName}/tab`,
+    path: '/tab',
     name: 'Tab',
     component: PageView,
     props: tabProps,
@@ -56,7 +56,7 @@ const routes = [
     },
   },
   {
-    path: `${repoName}/window`,
+    path: '/window',
     name: 'Window',
     component: PageView,
     props: windowProps,
@@ -65,7 +65,7 @@ const routes = [
     },
   },
   {
-    path: `${repoName}/menu`,
+    path: '/menu',
     name: 'Menu',
     component: PageView,
     props: menuProps,
@@ -74,7 +74,7 @@ const routes = [
     },
   },
   {
-    path: `${repoName}/contextMenu`,
+    path: '/contextMenu',
     name: 'ContextMenu',
     component: PageView,
     props: contextMenuProps,
@@ -83,7 +83,7 @@ const routes = [
     },
   },
   {
-    path: `${repoName}/button`,
+    path: '/button',
     name: 'Button',
     component: PageView,
     props: buttonProps,
@@ -92,7 +92,7 @@ const routes = [
     },
   },
   {
-    path: `${repoName}/icon`,
+    path: '/icon',
     name: 'Icon',
     component: PageView,
     props: iconProps,
@@ -101,7 +101,7 @@ const routes = [
     },
   },
   {
-    path: `${repoName}/checkbox`,
+    path: '/checkbox',
     name: 'Checkbox',
     component: PageView,
     props: checkboxProps,
@@ -110,7 +110,7 @@ const routes = [
     },
   },
   {
-    path: `${repoName}/radio`,
+    path: '/radio',
     name: 'Radio',
     component: PageView,
     props: radioProps,
@@ -119,7 +119,7 @@ const routes = [
     },
   },
   {
-    path: `${repoName}/select`,
+    path: '/select',
     name: 'Select',
     component: PageView,
     props: selectProps,
@@ -128,7 +128,7 @@ const routes = [
     },
   },
   {
-    path: `${repoName}/toggle`,
+    path: '/toggle',
     name: 'Toggle',
     component: PageView,
     props: toggleProps,
@@ -137,7 +137,7 @@ const routes = [
     },
   },
   {
-    path: `${repoName}/textField`,
+    path: '/textField',
     name: 'TextField',
     component: PageView,
     props: textFieldProps,
@@ -146,7 +146,7 @@ const routes = [
     },
   },
   {
-    path: `${repoName}/inputNumber`,
+    path: '/inputNumber',
     name: 'InputNumber',
     component: PageView,
     props: inputNumberProps,
@@ -155,7 +155,7 @@ const routes = [
     },
   },
   {
-    path: `${repoName}/slider`,
+    path: '/slider',
     name: 'Slider',
     component: PageView,
     props: sliderProps,
@@ -164,7 +164,7 @@ const routes = [
     },
   },
   {
-    path: `${repoName}/calendar`,
+    path: '/calendar',
     name: 'Calendar',
     component: PageView,
     props: calendarProps,
@@ -173,7 +173,7 @@ const routes = [
     },
   },
   {
-    path: `${repoName}/datePicker`,
+    path: '/datePicker',
     name: 'DatePicker',
     component: PageView,
     props: datePickerProps,
@@ -182,7 +182,7 @@ const routes = [
     },
   },
   {
-    path: `${repoName}/scheduler`,
+    path: '/scheduler',
     name: 'Scheduler',
     component: PageView,
     props: schedulerProps,
@@ -191,7 +191,7 @@ const routes = [
     },
   },
   {
-    path: `${repoName}/timePicker`,
+    path: '/timePicker',
     name: 'TimePicker',
     component: PageView,
     props: timePickerProps,
@@ -200,7 +200,7 @@ const routes = [
     },
   },
   {
-    path: `${repoName}/pagination`,
+    path: '/pagination',
     name: 'Pagination',
     component: PageView,
     props: paginationProps,
@@ -209,7 +209,7 @@ const routes = [
     },
   },
   {
-    path: `${repoName}/grid`,
+    path: '/grid',
     name: 'Grid',
     component: PageView,
     props: gridProps,
@@ -218,7 +218,7 @@ const routes = [
     },
   },
   {
-    path: `${repoName}/tree`,
+    path: '/tree',
     name: 'Tree',
     component: PageView,
     props: treeProps,
@@ -227,7 +227,7 @@ const routes = [
     },
   },
   {
-    path: `${repoName}/treeGrid`,
+    path: '/treeGrid',
     name: 'TreeGrid',
     component: PageView,
     props: treeGridProps,
@@ -236,7 +236,7 @@ const routes = [
     },
   },
   {
-    path: `${repoName}/barChart`,
+    path: '/barChart',
     name: 'BarChart',
     component: PageView,
     props: barChartProps,
@@ -245,7 +245,7 @@ const routes = [
     },
   },
   {
-    path: `${repoName}/lineChart`,
+    path: '/lineChart',
     name: 'LineChart',
     component: PageView,
     props: lineChartProps,
@@ -254,7 +254,7 @@ const routes = [
     },
   },
   {
-    path: `${repoName}/scatterChart`,
+    path: '/scatterChart',
     name: 'ScatterChart',
     component: PageView,
     props: scatterChartProps,
@@ -263,7 +263,7 @@ const routes = [
     },
   },
   {
-    path: `${repoName}/pieChart`,
+    path: '/pieChart',
     name: 'PieChart',
     component: PageView,
     props: pieChartProps,
@@ -272,7 +272,7 @@ const routes = [
     },
   },
   {
-    path: `${repoName}/comboChart`,
+    path: '/comboChart',
     name: 'ComboChart',
     component: PageView,
     props: comboChartProps,
@@ -281,7 +281,7 @@ const routes = [
     },
   },
   {
-    path: `${repoName}/heatMap`,
+    path: '/heatMap',
     name: 'HeatMap',
     component: PageView,
     props: heatMapProps,
@@ -290,7 +290,7 @@ const routes = [
     },
   },
   {
-    path: `${repoName}/message`,
+    path: '/message',
     name: 'Message',
     component: PageView,
     props: messageProps,
@@ -299,7 +299,7 @@ const routes = [
     },
   },
   {
-    path: `${repoName}/messageBox`,
+    path: '/messageBox',
     name: 'MessageBox',
     component: PageView,
     props: messageBoxProps,
@@ -308,7 +308,7 @@ const routes = [
     },
   },
   {
-    path: `${repoName}/notification`,
+    path: '/notification',
     name: 'Notification',
     component: PageView,
     props: notificationProps,
@@ -317,7 +317,7 @@ const routes = [
     },
   },
   {
-    path: `${repoName}/loading`,
+    path: '/loading',
     name: 'Loading',
     component: PageView,
     props: loadingProps,
@@ -326,7 +326,7 @@ const routes = [
     },
   },
   {
-    path: `${repoName}/progress`,
+    path: '/progress',
     name: 'Progress',
     component: PageView,
     props: progressProps,
@@ -342,7 +342,7 @@ const routes = [
 ];
 
 const router = createRouter({
-  history: createWebHistory(process.env.BASE_URL),
+  history: createWebHistory(),
   routes,
   scrollBehavior() {
     return {

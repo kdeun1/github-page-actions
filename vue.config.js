@@ -2,8 +2,7 @@ const path = require('path');
 const StyleLintPlugin = require('stylelint-webpack-plugin');
 
 module.exports = {
-  // publicPath: process.env.NODE_ENV === 'production' ? '/github-page-actions/' : '/',
-  publicPath: '/',
+  publicPath: process.env.NODE_ENV === 'production' ? '/github-page-actions/' : '/',
   devServer: {
     overlay: false,
   },
